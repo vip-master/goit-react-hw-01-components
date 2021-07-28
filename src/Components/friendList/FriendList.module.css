@@ -1,0 +1,3 @@
+.friendList{
+    composes: block from '../App/App.module.css'
+}

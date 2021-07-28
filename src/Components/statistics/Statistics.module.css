@@ -1,0 +1,26 @@
+.statistics{
+    composes: block from '../App/App.module.css';
+    text-align: center;
+
+}
+
+.title{
+    padding: 40px;
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.item{
+    padding: 10px;
+}
+
+.label{
+    margin-bottom: 5px;
+}
+
+.percentage{
+    display: block;
+}

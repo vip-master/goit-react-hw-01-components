@@ -1,0 +1,45 @@
+.profile{
+    composes: block from '../App/App.module.css';
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+.description{
+    margin: 15px 30px 20px 30px;
+}
+
+.avatar{
+    width: 90px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.name{
+    margin-bottom: 5px;
+}
+
+.tag{
+    margin-bottom: 5px;
+
+}
+
+.location{}
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.stat{
+    padding: 10px;
+}
+
+.label{
+    margin-bottom: 5px;
+}
+
+.quantity{
+    display: block;
+}
