@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './Statistics.module.css'
 
-function Statistics({title, stats}) {
+function Statistics({title="", stats}) {
     return (
         <section className={styles.statistics}>
-          <h2 className={styles.title}>{title}</h2>
+          {title?<h2 className={styles.title}>{title}</h2>:""}
 
           <ul className={styles.list}>
             {stats.map(stat=>(
@@ -21,7 +21,7 @@ function Statistics({title, stats}) {
 }
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
