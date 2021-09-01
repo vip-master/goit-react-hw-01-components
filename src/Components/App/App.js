@@ -10,15 +10,18 @@ import Profile from "../profile/Profile";
 import Statistics from "../statistics/Statistics";
 import TransactionHistory from "../transactionHistory/TransactionHistory";
 
+const {name,tag,location,avatar,stats:stat}=user.default
+
+
 function App() {
     return (
         <div className={styles.container}>
             <Profile
-              name={user.default.name}
-              tag={user.default.tag}
-              location={user.default.location}
-              avatar={user.default.avatar}
-              stats={user.default.stats}
+              name={name}
+              tag={tag}
+              location={location}
+              avatar={avatar}
+              stats={stat}
             />
             <Statistics title="UPLOAD STATS" stats={stats.default} />
             <FriendList friends={friends.default} />
